@@ -27,7 +27,7 @@ services:
 
   web:
     container_name: p803
-    build: .
+    build: ../..
     restart: "always"
     env_file: .env
     volumes:
