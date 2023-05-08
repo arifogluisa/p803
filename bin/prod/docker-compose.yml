@@ -15,7 +15,7 @@ services:
       - ./nginx/proxy.conf/:/etc/nginx/proxy.conf
 
   postgres:
-    container_name:  postgres-db-p803
+    container_name:  postgres-db-p804
     image: postgres:13.0-alpine
     ports:
       - 5432:5432
@@ -26,7 +26,7 @@ services:
       - LC_ALL=C.UTF-8
 
   web:
-    container_name: p803
+    container_name: p804
     build: ../..
     restart: "always"
     env_file: .env
