@@ -38,7 +38,7 @@ RUN apt-get update && \
 
 COPY mime.types /etc/mime.types
 COPY uwsgi.ini /conf/uwsgi.ini
-COPY ../../app /code
+COPY app /code
 
 # Start uWSGI
 CMD [ "uwsgi", "--ini", "/conf/uwsgi.ini"]
