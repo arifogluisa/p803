@@ -36,8 +36,8 @@ RUN apt-get update && \
   && pip install --no-cache-dir -r requirements.txt \
   && apt-get clean --dry-run
 
-COPY ../../mime.types /etc/mime.types
-COPY ../../uwsgi.ini /conf/uwsgi.ini
+COPY mime.types /etc/mime.types
+COPY uwsgi.ini /conf/uwsgi.ini
 COPY ../../app /code
 
 # Start uWSGI
