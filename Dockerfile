@@ -8,12 +8,7 @@ WORKDIR ${APP_ROOT}
 
 COPY ./requirements.txt requirements.txt
 
-RUN apt-get update && \
-  apt-get install -y \
-  libglib2.0-0 \
-  libnss3 \
-  libgconf-2-4 \
-  libfontconfig \
+RUN apt-get update && apt-get install -y \
   locales \
   locales-all \
   build-essential \
@@ -30,7 +25,6 @@ RUN apt-get update && \
   libssl-dev \
   curl \
   gettext \
-  python3-opencv \
   libzbar-dev \
   && pip install --upgrade pip \
   && pip install --no-cache-dir -r requirements.txt \
