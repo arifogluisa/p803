@@ -1,0 +1,10 @@
+asgiref==3.6.0
+# backports.zoneinfo==0.2.1
+Django==4.2.1
+sqlparse==0.4.4
+uwsgi==2.0.21
+psycopg2-binary
+celery
+django-celery-beat
+django-celery-results
+redis
